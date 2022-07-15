@@ -37,6 +37,8 @@ public class AllocationListener {
 			}else {
 				builder.pendingInventory(true);
 			}
+			
+			builder.isValid(true);
 		} catch(Exception e ) {
 			log.error("allocation err:" + e.getMessage());
 			builder.isValid(false);
